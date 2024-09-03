@@ -1,7 +1,7 @@
 {
-    "name": "daltcore/lara-pdf-merger",
+    "name": "tidschi/pdf-merger",
     "description": "",
-    "keywords": ["merger","merge","pdf","manage","paginate", "laravel", "duplex merge"],
+    "keywords": ["merger","merge","pdf","manage","paginate", "duplex merge"],
     "license" : [
         "MIT"
     ],
@@ -18,24 +18,30 @@
             "name": "Marouan Sami",
             "email": "sami.marwen.isetcom@gmail.com",
             "homepage": "https://github.com/MarwenSami"
+        },
+        {
+            "name": "Thomas Günther",
+            "email": "th.guenther@saale-mail.de",
+            "homepage": "https://github.com/TiDSchi/"
         }
     ],
     "require": {
-        "php" : ">=5.4"
+        "php" : ">=8.2"
     },
-    "homepage" : "https://github.com/MarwenSami/lara-pdf-merger",
+    "homepage" : "https://github.com/tidschi/pdf-merger",
     "autoload": {
         "psr-0": {
-            "LynX39\\LaraPdfMerger": "src/"
+            "PdfMerger": "src/",
+            "Illuminate": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LynX39\\LaraPdfMerger\\PdfMergerServiceProvider"
+                "PdfMErger\\PdfMergerServiceProvider"
             ],
             "aliases": {
-                "PdfMerger": "LynX39\\LaraPdfMerger\\Facades\\PdfMerger"
+                "PdfMerger": "PdfMerger\\Facades\\PdfMerger"
             }
         }
     }

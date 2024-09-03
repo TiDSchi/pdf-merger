@@ -29,18 +29,20 @@ composer update
 ### Laravel <5.5:
 
 After updating composer, add the ServiceProvider to the providers array in config/app.php
+
 ```php
-    LynX39\LaraPdfMerger\PdfMergerServiceProvider::class,
+    PdfMerger\PdfMergerServiceProvider::class,
 ```
 You can optionally use the facade for shorter code. Add this to your facades:
+
 ```php
-    'PdfMerger' => LynX39\LaraPdfMerger\Facades\PdfMerger::class,
+    'PdfMerger' => \PdfMerger\Facades\PdfMerger::class,
 ```
 ## Usage
 
 ```php
 
-use LynX39\LaraPdfMerger\Facades\PdfMerger;
+use PdfMerger\Facades\PdfMerger;
 
 //...
 
