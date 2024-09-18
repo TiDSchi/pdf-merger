@@ -1846,12 +1846,11 @@ class TCPDF_STATIC {
 	 * @public static
 	 */
 	public static function fopenLocal($filename, $mode) {
-		if (strpos($filename, '://') === false) {
-			$filename = 'file://'.$filename;
-		} elseif (stream_is_local($filename) !== true) {
+		if (stream_is_local($filename) !== true) {
 			return false;
 		}
-		return fopen($filename, $mode);
+
+        return fopen($filename, $mode);
 	}
 
 	/**
