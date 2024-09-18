@@ -1,10 +1,8 @@
 {
-    "name": "tidschi/pdf-merger",
+    "name": "contelli/easy-pdf-merger",
     "description": "",
-    "keywords": ["merger","merge","pdf","manage","paginate", "duplex merge"],
-    "license" : [
-        "MIT"
-    ],
+    "keywords": ["merger","merge","pdf","manage","paginate", "laravel", "duplex merge"],
+    "license" : "MIT",
     "authors": [
         {
             "name": "Michael Musso",
@@ -18,30 +16,28 @@
             "name": "Marouan Sami",
             "email": "sami.marwen.isetcom@gmail.com",
             "homepage": "https://github.com/MarwenSami"
-        },
-        {
+        }, {
             "name": "Thomas Günther",
             "email": "th.guenther@saale-mail.de",
-            "homepage": "https://github.com/TiDSchi/"
+            "homepage": "https://github.com/TiDschi"
         }
     ],
     "require": {
         "php" : ">=8.2"
     },
-    "homepage" : "https://github.com/tidschi/pdf-merger",
+    "homepage" : "https://github.com/TiDschi/pdf-merger",
     "autoload": {
-        "psr-0": {
-            "PdfMerger": "src/",
-            "Illuminate": "src/"
+        "psr-4": {
+            "EasyPdfMerger\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "PdfMErger\\PdfMergerServiceProvider"
+                "EasyPdfMerger\\PdfMergerServiceProvider"
             ],
             "aliases": {
-                "PdfMerger": "PdfMerger\\Facades\\PdfMerger"
+                "PdfMerger": "EasyPdfMerger\\Facades\\PdfMerger"
             }
         }
     }
